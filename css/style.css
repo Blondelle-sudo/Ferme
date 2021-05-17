@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: arial;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background-color: rgba(0, 0, 255, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.menu-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50px;
+  background-color: #f4f4f4;
+  /*box-shadow: 0 2px 5px lightgrey;*/
+  width: 100%;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin-right: 30px;
+}
+
+.navigation a {
+  text-decoration: inherit;
+  color: rgba(0, 0, 255, .5);
+  font-size: 16px;
+  font-family: arial;
+  font-weight: bold;
+  cursor: pointer;
+  width: calc(80% / 4);
+  text-align: center;
+  height: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.navigation a.active {
+  background-color: white !important;
+  border-radius: 5px 5px 0 0;
+  /*box-shadow: 0 2px 5px lightgrey;*/
+  color: orange;
+}
+
+section.main {
+  padding: 20px;
+}
+
+.description-ferme {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.description-ferme--photo {
+  display: flex;
+  flex: 3;
+  height: auto;
+}
+
+.description-ferme--photo img {
+  width: 100%;
+  height: 200px;
+}
+
+.description-ferme--text {
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 10px 10px 10px;
+}
+
+.description-ferme--text h2 {
+  color: rgba(0, 0, 255, .5);
+  margin: 5px !important;
+}
+
+.description-ferme--text div {
+  font-size: 16px;
+  color: grey;
+  margin-left: 5px;
+}
+
+.photos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.photos h2 {
+  margin: 10px 10px 10px 0;
+  color: rgba(0, 0, 255, .5);
+}
+
+.photos > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group-photo {
+  display: flex;
+  flex-direction: row;
+  width: 49%;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.photo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 48%;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 200px;
+}
+
+.photo-item--info {
+  font-size: 13px;
+  color: grey;
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 50, .8);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .photos > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .group-photo {
+    width: 98%;
+  }
+
+  .description-ferme {
+    flex-direction: column;
+  }
+
+  .description-ferme--text {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .description-ferme--photo img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .description-ferme--photo {
+    width: 100%;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .group-photo {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .photo-item {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
