@@ -1,0 +1,49 @@
+.theme-dark {
+  background-color: rgba(0, 0, 0, .69);
+}
+
+.theme-dark header {
+  background-color: rgba(0, 0, 0, .7);
+  color: white;
+}
+
+.theme-dark header > .menu-section {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.theme-dark header > .menu-section nav.navigation a {
+  color: white;
+}
+
+.theme-dark header > .menu-section nav.navigation a.active {
+  color: white;
+  background-color: grey;
+}
+
+.theme-dark div.description-ferme--text > div,
+.theme-dark div.photo-item--info {
+  color: rgba(255, 255, 255, .8);
+}
+
+.theme-dark article.photos > h2,
+.theme-dark div.description-ferme--text > h2 {
+  color: skyblue;
+}
+
+.theme-dark footer {
+  background-color: rgba(0, 0, 0, .65);
+}
+
+.theme-dark article.contacts {
+  background-color: grey;
+}
+
+.theme-dark article.contacts #email,
+.theme-dark article.contacts #comment {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, .6);
+  background-color: #cacaca;
+  border: 0;
+}
+.theme-dark article.contacts .contact {
+  background-color: lightgrey;
+}
