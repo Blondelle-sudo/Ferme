@@ -29,7 +29,7 @@ function setTheme(theme) {
   date = date.toUTCString();
 
   if (theme === null || theme === undefined) {
-    document.cookie = `theme=light; path=/; expires=${date}`;
+    document.cookie = `theme=light; path=/; SameSite=None; Secure; expires=${date}`;
     /**
      * On peux aussi utiliser l'option max-age en lui passant la duree de validite
      * en seconde comme suite
@@ -40,7 +40,7 @@ function setTheme(theme) {
     container.classList.remove("theme-dark");
     togglerBtn.classList.remove("toggler-on");
   } else {
-    document.cookie = `theme=${theme}; path=/`;
+    document.cookie = `theme=${theme}; path=/; SameSite=None; Secure`;
 
     if (theme === "light") {
       container.classList.remove("theme-dark");
