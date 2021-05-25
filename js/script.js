@@ -2,7 +2,7 @@ const togglerBtn = document.querySelector(".toggler");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
 
-window.onload = () => { load();}
+body.onload = () => { load();}
 
 togglerBtn.addEventListener("click", function() {
   let theme = document.cookie.substr(6);
